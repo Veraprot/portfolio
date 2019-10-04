@@ -1,0 +1,28 @@
+.work-main-container{
+    text-align: center;
+    margin: 100px;
+    /* background: yellow; */
+}
+
+.work-heading{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.work-sub-heading{
+    padding: 40px 0;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.projects-main-container{
+}
+
+.project-container{
+    background: #8C43FF;
+    display: inline-block;
+    min-width: 350px;
+    border-radius: 6px;
+    min-height: 205px;
+    margin: 25px;
+}
