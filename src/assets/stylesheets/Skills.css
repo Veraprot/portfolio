@@ -1,0 +1,38 @@
+.skills-main-container{
+    color: #293347;
+    padding-bottom: 3em;
+    text-align: center;
+    margin-top: -100px;
+    text-align: center;
+}
+
+.skills-container{
+    letter-spacing: 1px;
+    background: white;
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 70px 45px;
+    border-bottom: 0px solid #E6ECF8;
+    border-right: 1px solid #E6ECF8;
+    border-radius: 6px;
+    box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8;
+}
+
+.skill-desc{
+    margin-top: 20px;
+}
+
+.languages-title{
+    color: #f68084;
+    font-weight: 500;
+    padding: 30px 0;
+}
+
+.languages{
+    font-weight: 300;
+    line-height: 1.5rem;
+
+}
+
+

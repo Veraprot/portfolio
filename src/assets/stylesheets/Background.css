@@ -1,0 +1,25 @@
+.background-main-container{
+    background: #f68084;
+    text-align: center;
+    height: 600px;
+}
+
+.background-heading{
+    padding-top: 130px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.background-desc{
+    color: white;
+    text-align: center;
+    /* color: #4a4a4a; */
+    width: 50%;
+    margin-left: 25%;
+    padding-top: 20px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}

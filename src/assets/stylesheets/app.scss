@@ -1,30 +1,18 @@
-// @import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
-
-$charcoal: #373737;
-$paper: #F4F4F4;
-$lavender: #6D7993;
-$grape: #94618E;
-$eggplant: #49274A;
-$lemon: #DCB239;
-$forest: #015249;
-
 * {
   scroll-behavior: smooth;
   font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
 
-body {
-  margin: 0;
-  background: black;
+.make-bold{
+  font-weight: 700;
+  border-bottom: 3px solid #fff;
 }
 
 .app-container {
   perspective: 1px;
   transform-style: preserve-3d;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
 }
 
 
@@ -33,7 +21,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding: .5em 0; 
-  background-color: rgba(0, 0, 0, 0.5);
 
   .nav-icons {
     width: 100%;
@@ -50,7 +37,8 @@ body {
 
     a {
       text-decoration: none;
-      color: white;
+      color: black;
+      border-bottom: 2px solid black;
       font-size: 1.3em;
     }
   }
@@ -63,7 +51,7 @@ body {
 
 
 .fixed-menu {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 10;
@@ -73,11 +61,28 @@ body {
 
 //landing page styling begins
 
+.hero-container {
+  padding-top: 8em auto 0 auto;
+  height: 60vh;
+
+  &.intro-page {
+    text-align: center;
+  }
+}
+
 .name-title {
-  text-transform: uppercase;
-  line-height: 90%;
   letter-spacing: 2px;
-  font-size: 5em;
+  padding: 1em 0;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.about-me-content {
+  margin-top: 200px;
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
+  font-size: 2.2em;
   font-weight: 800;
   background: -webkit-linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
   -webkit-background-clip: text;
@@ -85,163 +90,19 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.roles {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-  color: floralwhite;
-}
-
-.separator {
-  margin: 0px 10px;
-}
-
-
-.hero-container {
-  padding-top: 8em;
-  padding-left: 7em;
-  height: calc(100vh - 60px);
-
-  &.intro-page {
-    text-align: left;
-  }
-}
-
-.parallax {
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-
-  .parallax-image {
-    transform: translateZ(-1px) scale(2);
-    min-width: 100%;
-    min-height: 100%;
-  }
-}
-
 .download-resume-btn {
   font-size: 1em;
   cursor: pointer;
   margin-top: 1em;
-  padding: 1em 2em;
+  padding: 1em 4em;
   background: transparent;
-  color: white;
   border: 5px solid;
   border-image-source: -webkit-linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
   border-image-slice: 1;
   /* box-shadow: 10px 20px 40px 0px rgba(36, 37, 38, 0.3); */
 }
-
-.about-me-content {
-  color: white;
-  max-width: 35em;
-  font-size: 1em;
-  line-height: 2em;
-  margin-top: -1em;
-}
 //landing page styling ends
 
-.title-section {
-  text-align: left;
-  background-color: $eggplant;
-  overflow: auto;
-}
 
-.parallax-container {
-  height: 500px;
-  position: relative;
 
-  .inner-container {
-    padding-top: 4em;
-  }
-}
 
-.section-header {
-  font-family: 'Roboto', sans-serif;
-  text-align: left;
-  font-size: 3.56rem;
-  line-height: 110%;
-  margin: 1.5rem 0;
-  font-weight: 400;
-}
-
-section {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.row-container {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-}
-
-.about-section {
-  background-color: $paper;
-
-  .about-container {
-    height: auto;
-    padding: 4em 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    margin: 0 auto;
-    max-width: 1280px;
-
-    .profile-history {
-      margin-right: 20px;
-      max-width: 600px;
-
-      p {
-        text-align: left;
-        font-family: 'Roboto', sans-serif;
-        font-size: 18px;
-      }
-    }
-
-    .profile-image {
-      overflow: hidden;
-      // height: 100%;
-      margin-left: 40px;
-      box-sizing: border-box;
-      width: 200px;
-      height: 200px;
-      background-color: #81b7ea;
-      border-radius: 100%;
-    }
-  }
-}
-
-table {
-  margin: 0 auto;
-
-  tr {
-    th {
-      font-family: 'Roboto', sans-serif;
-      color: rgb(255, 215, 0);
-      font-size: 1.8em;
-      padding: 15px 5px;
-      display: table-cell;
-      text-align: center;
-      vertical-align: middle;
-      border-radius: 2px;
-    }
-
-    td {
-      font-family: 'Roboto', sans-serif;
-      padding: 0;
-      width: 33%;
-      text-align: center;
-      font-size: 1.5em;
-    }
-  }
-}

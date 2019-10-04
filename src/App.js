@@ -3,6 +3,8 @@ import './assets/stylesheets/app.scss';
 import tree from '../src/assets/images/tree-city.png'
 import profile from '../src/assets/images/profile.jpg'
 import Navbar from './components/Navbar';
+import Skills from './components/Skills'
+import Background from './components/Background';
 
 function App() {
   return (
@@ -12,7 +14,6 @@ function App() {
 
         {/* landing page div starts */}
         <div className="hero-container intro-page">
-          <h1 className="name-title">Vera <br/>Protopopova</h1>
           {/* <h5 className="roles">
             <span>Software Engineer</span>
             <span className="separator">|</span>
@@ -21,17 +22,16 @@ function App() {
             <span>Creative</span>
           </h5> */}
           <p className="about-me-content">
-            An artist turned Full stack web developer with a mission to leave the world a better place than I found it. 
-            As an Software Engineering Coach at Flatiron School, I have taught over 100 students Ruby, Rails, SQL, JavaScript, React and Redux.
-            I'm always looking for new ways to grow my skills as a software engineer and work with brilliant, dedicated people to create something amazing.
+            Artist, Full Stack Web Developer & Software Engineering Coach <br/>  
           </p>
-          <button class="download-resume-btn">Download Resume</button>
+          <p className="name-title">Hi, I'm <span className = "make-bold">Vera Protopopova</span> and I'm on a mission to change the world.</p>
+          <button class="download-resume-btn">Resume</button>
           {/* <div className="parallax">
             <img className="parallax-image" src={tree} alt=""/>
           </div> */}
         </div>
         {/* landing page div ends */}
-        <div className="section title-section" id="about">
+        {/* <div className="section title-section" id="about">
           <h2 className="section-header">Background</h2>
         </div>
 
@@ -41,23 +41,15 @@ function App() {
               <p>
               Full stack web developer with  a mission to leave the world a better place than I found it. Currently employed at Flatiron School as an Software Engineering Coach. I have taught over 100 people how to create web apps with Ruby, Rails, SQL, JavaScript, React and Redux, and given self-made lectures on essential skills like Git, CSS, pair-programming and problem solving. I'm always looking for new ways to grow my skills as a software engineer and work with brilliant, dedicated people to create something amazing.
               </p>
-              {/* <p>I love building things. I find hard engineering problems intrinsically fun to tackle, and love facing new challenges.</p> */}
-              <br/>
-              {/* <p>My personal interests include: 
-                <ul>
-                  <li>art</li>
-                  <li>math</li>
-                  <li>something else</li>
-                </ul>
-              </p> */}
             </div>
             <div className="profile-image">
               <img src={profile} alt=""/>
             </div>
           </div>
-        </div>
-
-        <div className="section title-section" id="experience">
+        </div> */}
+        <Background/>
+        <Skills/>
+        {/* <div className="section title-section" id="experience">
           <h2 className="section-header">Experience</h2>
         </div>
         <div className="parallax-container">
@@ -110,7 +102,7 @@ function App() {
           <div className="parallax">
             <img className="parallax-image" src={tree} alt=""/>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
