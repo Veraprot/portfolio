@@ -6,7 +6,7 @@ import message from '../../src/assets/images/message.svg'
 const Navbar = () => {
   return (
     <div className="nav-links fixed-menu">
-      <ul className="nav-icons">
+      {/* <ul className="nav-icons">
         <li>
           <img src={linkedin} alt=""/>
         </li>
@@ -16,7 +16,7 @@ const Navbar = () => {
         <li>
           <img src={message} alt=""/>
         </li>
-      </ul>
+      </ul> */}
       <ul className="links">
         <li>
           <a href="#about">About Me</a>

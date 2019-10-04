@@ -9,21 +9,28 @@ function App() {
     <>
       <Navbar/>
       <div className="app-container">
+
+        {/* landing page div starts */}
         <div className="hero-container intro-page">
-          <h1 className="name-title">Vera Protopopova</h1>
-          <h5 className="roles">
+          <h1 className="name-title">Vera <br/>Protopopova</h1>
+          {/* <h5 className="roles">
             <span>Software Engineer</span>
             <span className="separator">|</span>
             <span>Educator</span>
             <span className="separator">|</span>
             <span>Creative</span>
-          </h5>
-
-          <div className="parallax">
+          </h5> */}
+          <p className="about-me-content">
+            An artist turned Full stack web developer with a mission to leave the world a better place than I found it. 
+            As an Software Engineering Coach at Flatiron School, I have taught over 100 students Ruby, Rails, SQL, JavaScript, React and Redux.
+            I'm always looking for new ways to grow my skills as a software engineer and work with brilliant, dedicated people to create something amazing.
+          </p>
+          <button class="download-resume-btn">Download Resume</button>
+          {/* <div className="parallax">
             <img className="parallax-image" src={tree} alt=""/>
-          </div>
+          </div> */}
         </div>
-
+        {/* landing page div ends */}
         <div className="section title-section" id="about">
           <h2 className="section-header">Background</h2>
         </div>

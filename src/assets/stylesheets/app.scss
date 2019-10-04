@@ -1,15 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
 
 $charcoal: #373737;
 $paper: #F4F4F4;
-$lavender: #6D7993; 
+$lavender: #6D7993;
 $grape: #94618E;
-$eggplant: #49274A; 
+$eggplant: #49274A;
 $lemon: #DCB239;
 $forest: #015249;
 
+* {
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
   margin: 0;
+  background: black;
 }
 
 .app-container {
@@ -20,15 +27,16 @@ body {
   overflow-y: scroll;
 }
 
+
+// navbar styling begins here
 .nav-links {
-  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: space-between;
-  padding-right: 5%;
-  padding-left: 0;
+  padding: .5em 0; 
+  background-color: rgba(0, 0, 0, 0.5);
 
   .nav-icons {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     padding-left: 16px;
@@ -36,20 +44,19 @@ body {
 
   .links {
     display: flex;
-    font-family: 'Poiret One', cursive;
-    width: 50%;
-    padding: 16px auto; 
+    width: 100%;
     justify-content: flex-end;
+    margin-right: 3em;
 
     a {
       text-decoration: none;
       color: white;
-      font-size: 1.5em;
+      font-size: 1.3em;
     }
   }
 
   li {
-    margin-left: 5%;
+    margin-left: 3%;
     list-style-type: none;
   }
 }
@@ -62,17 +69,24 @@ body {
   z-index: 10;
 }
 
+//navbar styling ends
+
+//landing page styling begins
+
 .name-title {
-  font-family: 'Poiret One', cursive;
-  padding-top: 1.3em;
-  font-size: 5.5em;
-  line-height: 110%;
-  font-weight: 400;
-  color: floralwhite;
+  text-transform: uppercase;
+  line-height: 90%;
+  letter-spacing: 2px;
+  font-size: 5em;
+  font-weight: 800;
+  background: -webkit-linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .roles {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1em;
   font-weight: 400;
   color: floralwhite;
@@ -84,10 +98,12 @@ body {
 
 
 .hero-container {
+  padding-top: 8em;
+  padding-left: 7em;
   height: calc(100vh - 60px);
 
   &.intro-page {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -107,6 +123,28 @@ body {
   }
 }
 
+.download-resume-btn {
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 1em;
+  padding: 1em 2em;
+  background: transparent;
+  color: white;
+  border: 5px solid;
+  border-image-source: -webkit-linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+  border-image-slice: 1;
+  /* box-shadow: 10px 20px 40px 0px rgba(36, 37, 38, 0.3); */
+}
+
+.about-me-content {
+  color: white;
+  max-width: 35em;
+  font-size: 1em;
+  line-height: 2em;
+  margin-top: -1em;
+}
+//landing page styling ends
+
 .title-section {
   text-align: left;
   background-color: $eggplant;
@@ -123,7 +161,7 @@ body {
 }
 
 .section-header {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: left;
   font-size: 3.56rem;
   line-height: 110%;
@@ -145,6 +183,7 @@ section {
 
 .about-section {
   background-color: $paper;
+
   .about-container {
     height: auto;
     padding: 4em 0;
@@ -164,7 +203,7 @@ section {
 
       p {
         text-align: left;
-        font-family: 'Slabo 27px', serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 18px;
       }
     }
@@ -187,8 +226,8 @@ table {
 
   tr {
     th {
-      font-family: 'Poiret One', cursive;
-      color: rgb(255,215,0);
+      font-family: 'Roboto', sans-serif;
+      color: rgb(255, 215, 0);
       font-size: 1.8em;
       padding: 15px 5px;
       display: table-cell;
@@ -198,7 +237,7 @@ table {
     }
 
     td {
-      font-family: 'Titillium Web', sans-serif;
+      font-family: 'Roboto', sans-serif;
       padding: 0;
       width: 33%;
       text-align: center;
