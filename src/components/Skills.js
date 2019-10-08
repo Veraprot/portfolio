@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import '../assets/stylesheets/Skills.css'
-import Ruby from '../assets/images/ruby_1.png'
 export default class Skills extends Component {
     render(){
         return(
